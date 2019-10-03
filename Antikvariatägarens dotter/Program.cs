@@ -10,6 +10,14 @@ namespace Antikvariatägarens_dotter
     {
         static void Main(string[] args)
         {
+           
+            Books Book = new Books();
+
+            Book.PrintInfo();
+
+            Console.WriteLine(Book.Evaluate());
+
+            Console.ReadLine();
         }
     }
 }
