@@ -28,10 +28,10 @@ namespace Antikvariatägarens_dotter
 
             
 
-            Book.PrintInfo();
+            Book.PrintInfo(); // Skriver en boks värden
 
-            Console.WriteLine(Book.Evaluate());
-
+            Console.WriteLine(Book.Evaluate()); // skriver i konsollen vad en boks värdering är,
+                                                // det ska vara riktiga värdet multiplicerat med sälsynhet med 50%-150% felmarginal
             Console.ReadLine();
         }
     }
