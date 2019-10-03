@@ -15,8 +15,17 @@ namespace Antikvariatägarens_dotter
 
             Customers customers = new Customers();
 
+
+            
+
+            Book.PrintInfo(); // Skriver en boks värden
+
+            Console.WriteLine(Book.Evaluate()); // skriver i konsollen vad en boks värdering är,
+                                                // det ska vara riktiga värdet multiplicerat med sälsynhet med 50%-150% felmarginal
+
+
             Console.WriteLine("Add more customers to the store? \n 1. Yes \n 2. No");
-            if(Console.Read() == 1)
+            if (Console.Read() == 1)
             {
                 Console.WriteLine("How manny customers?");
                 customers.AddCustomers(Console.Read());
@@ -25,13 +34,6 @@ namespace Antikvariatägarens_dotter
             {
                 Console.WriteLine("Ok lets not do that then");
             }
-
-            
-
-            Book.PrintInfo(); // Skriver en boks värden
-
-            Console.WriteLine(Book.Evaluate()); // skriver i konsollen vad en boks värdering är,
-                                                // det ska vara riktiga värdet multiplicerat med sälsynhet med 50%-150% felmarginal
             Console.ReadLine();
         }
     }
