@@ -41,8 +41,8 @@ namespace Antikvariatägarens_dotter
         public int Evaluate()
         {
             int estimate = actualValue * rarity;
-            int genDevider = gen.Next(5, 15) / 10;
-
+            int genDevider = gen.Next(5, 15) / 10; //försöker att slumpa ett värde och sedan dividera det med tio för att få % 
+                                                   // som sedan ska multipliceras med estimate
             return estimate * genDevider;
         }
 
